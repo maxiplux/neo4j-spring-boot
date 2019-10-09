@@ -27,6 +27,8 @@ public class ItemServiceImpl implements ItemService {
 		return productos.stream().map(p -> new Item(p, 1)).collect(Collectors.toList());
 	}
 
+
+
 	@Override
 	public Item findById(Long id, Integer cantidad) {
 		Map<String, String> pathVariables = new HashMap<String, String>();
